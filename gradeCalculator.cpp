@@ -9,6 +9,7 @@ Grade::Grade(std::vector<int> a, std::vector<int> l, int f_e, int mec_p, int f_p
 }
 
 int Grade::calculateSingleGrade(int g){
+    //switch statements 
 
 }   
 
