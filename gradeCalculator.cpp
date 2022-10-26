@@ -8,7 +8,7 @@ Grade::Grade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p,
     this->final_project = f_p;
 }
 
-int Grade::calculateNumGrade(){    
+int Grade::calculateFinalGrade(){    
 
     float assignmentPts = 0;
     float labPts = 0;
