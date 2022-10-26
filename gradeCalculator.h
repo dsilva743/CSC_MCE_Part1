@@ -12,6 +12,6 @@ class Grade{
         std::vector<float> assignments, labs;
     public: 
         Grade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p);
-        void calculateNumGrade();
-        void calculateLetterGrade();
+        int calculateNumGrade();
+        char calculateLetterGrade();
 };
