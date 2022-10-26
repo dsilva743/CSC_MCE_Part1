@@ -30,5 +30,6 @@ int Grade::calculateNumGrade(){
 }
 
 char Grade::calculateLetterGrade(){
-
+    
+    
 }
