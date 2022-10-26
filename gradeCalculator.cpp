@@ -1,6 +1,6 @@
 #include "gradeCalculator.h"
 
-Grade::Grade(std::vector<int> a, std::vector<int> l, int f_e, int mec_p, int f_p){
+Grade::Grade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p){
     this->assignments = a;
     this->labs = l;
     this->final_exam = f_e;
@@ -8,11 +8,27 @@ Grade::Grade(std::vector<int> a, std::vector<int> l, int f_e, int mec_p, int f_p
     this->final_project = f_p;
 }
 
-int Grade::calculateSingleGrade(int g){
-    //switch statements 
+void Grade::calculateNumGrade(){    
 
-}   
+    float assignmentPts = 0;
+    float labPts = 0;
+    float finalExamPts = final_exam;
+    float mecProjectPts = mec_project;
+    float finalProjectPts = final_project;
 
-int Grade::calculateMultipleGrades(std::vector<int> g){
+    for(int i = 0; i < assignments.size(); i++){
+        assignmentPts += assignments[i];
+    }
+    
+    for(int i = 0; i < labs.size(); i++){
+        labPts += labs[i];
+    }
+
+    float totalPts = (assignmentPts + labPts + finalExamPts + mecProjectPts + finalProjectPts) / 10;
+    
+    std::cout << totalPts << std::endl;
+}
+
+void Grade::calculateLetterGrade(){
 
 }
