@@ -29,7 +29,26 @@ int Grade::calculateFinalGrade(){
     return totalPts;
 }
 
-char Grade::calculateLetterGrade(){
-    
+char Grade::calculateLetterGrade(float totalPts){
+    char letter;
+    if (totalPts < 60){
+        letter = 'F';
+    }
+	else if (totalPts < 70){
+        letter = 'D';
+    }
+	else if (totalPts < 80){
+        letter = 'C';
+    }	
+	else if (totalPts < 90){
+        letter = 'B';
+    }
+	else{
+        letter = 'A';
+    }
+
+    return letter;
+
+   }
     
 }
