@@ -72,5 +72,17 @@ The input that our code will take in is a name and the data that the user wants 
 		
 		return the letter
 		
+# Psuedocode For MidtermGrade() func
+	Initialize assignmentTotal to zero
+
+	Initialize LabTotal to zero
+
+	Initialize totalGrade to zero
+
+	Using a for loop that loops 3 times and traverses through the assignment vector data set and sum the first 3 assignment grades and store it in the assignment Total variable
+
+	Using another for loop that loops 6 times and traverses through the lab vector data set and sums the first 6 grades and stores it in labTotal variable 
+
+	Return total grade that has reassigned total grade to the sum of assignment total and lab total
 
 
