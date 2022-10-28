@@ -55,7 +55,18 @@ char Grade::calculateLetterGrade(float totalPts){
 
 double Grade::calculateMidTermGrade(){
 
+    double assignmentTotal = 0;
+    double labTotal = 0;
 
+    //Total sum of the first 3 assignments grades
+    for(int i = 0; i < 3; i++){
+        assignmentTotal += assignment[i];
+    }
+
+    //Total sum of for 6 lab assignment grades
+    for(int i = 0; i < 6; i++){
+        labTotal += lab[i];
+    }
 
 
 }
