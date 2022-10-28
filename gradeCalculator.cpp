@@ -80,6 +80,8 @@ double Grade::calculateMidTermGrade(std::vector<float> a, std::vector<float> l){
 
     double assignmentTotal = 0;
     double labTotal = 0;
+    
+    double totalGrade = 0;
 
     //Total sum of the first 3 assignments grades
     for(int i = 0; i < 3; i++){
@@ -90,6 +92,8 @@ double Grade::calculateMidTermGrade(std::vector<float> a, std::vector<float> l){
     for(int i = 0; i < 6; i++){
         labTotal += labs[i];
     }
+
+    return totalGrade = assignmentTotal + labTotal;
 
 
 }
