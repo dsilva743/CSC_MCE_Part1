@@ -80,7 +80,7 @@ double Grade::calculateMidTermGrade(std::vector<float> a, std::vector<float> l){
 
     double assignmentTotal = 0;
     double labTotal = 0;
-    
+
     double totalGrade = 0;
 
     //Total sum of the first 3 assignments grades
@@ -95,60 +95,53 @@ double Grade::calculateMidTermGrade(std::vector<float> a, std::vector<float> l){
 
     return totalGrade = assignmentTotal + labTotal;
 
-
 }
 
 //calculates the categorical grade you have for each section and outputs it
-void Grade::calculateCategoricalGrade(){
+void Grade::calculateCategoricalGrade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p){
     double assingmentCategorical = 0;
-    
+
     double labCategorical = 0;
-    
-    double finalExamGrade = final_exam;
-    
-    double finalProjectGrade = final_project;
-    
-    double mecProjectGrade = mec_project;
-    
+
+    double finalExamGrade = f_e;
+
+    double finalProjectGrade = f_p;
+
+    double mecProjectGrade = mec_p;
+
     //calculates the total grade of the assignments
-    for(int i = 0; i < assignments.size(); i++){
-        assignmentCategorical += assignmentCategorical[i];
+    for(int i = 0; i < a.size(); i++){
+        assingmentCategorical += a[i];
     }
     //calculates the total grade of the labs
-    for(int i = 0; i < labs.size(); i++){
-        labCategorical += labCategorical[i];
+    for(int i = 0; i < l.size(); i++){
+        labCategorical += l[i];
     }
     //This section I divide all the sections by their weight out of 100 which would return a decimal below 1 so I then multiply each section by 10 to get the percent
-    assignmentCategorical = assignmentCategorical /500;
-    
-    assignmentCategorical = assignmentCategorical * 10;
-    
+    assingmentCategorical = assingmentCategorical / 500;
+    assingmentCategorical = assingmentCategorical * 10;
+
     labCategorical = labCategorical / 50;
-    
     labCategorical = labCategorical * 10;
-    
+
     finalExamGrade = finalExamGrade / 100;
-    
     finalExamGrade = finalExamGrade * 10;
-    
+
     finalProjectGrade = finalProjectGrade /350;
-    
     finalProjectGrade = finalProjectGrade * 10;
-    
+
     mecProjectGrade = mecProjectGrade / 30;
-    
     mecProjectGrade = mecProjectGrade * 10;
-    
+
     //These commands output each section with the name of the section the number and a percent symbol
-    Std::Cout<< "Assignments Grade: " << assignmentCategorical << "%" << std::endl;
-    
-    Std::Cout<< "Labs Grade: " << labCategorical << "%" << std::endl;
-    
-    Std::Cout<< "Final Project Grade: " << finalProjectGrade << "%" << std::endl;
-    
-    Std::Cout<< "Final Exam Grade: " << finalExamGrade << "%" << std::endl;
-    
-    Std::Cout<< "MEC project Grade: " << mecProjectGrade <<  "%" << std::endl;
-    
-    
+    std::cout<< "Assignments Grade: " << assingmentCategorical << "%" << std::endl;
+
+    std::cout<< "Labs Grade: " << labCategorical << "%" << std::endl;
+
+    std::cout<< "Final Project Grade: " << finalProjectGrade << "%" << std::endl;
+
+    std::cout<< "Final Exam Grade: " << finalExamGrade << "%" << std::endl;
+
+    std::cout<< "MEC project Grade: " << mecProjectGrade <<  "%" << std::endl;
+
 }
