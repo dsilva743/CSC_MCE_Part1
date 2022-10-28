@@ -22,7 +22,7 @@ class Grade{
         int calculateFinalGrade();
         std::string calculateLetterGrade(float totalPts);
         double calculateMidTermGrade(std::vector<float> a, std::vector<float> l);
-        void calculateCategoricalGrade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p);
+        void calculateCategoricalGrade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p, double midterm);
 };
 
 
