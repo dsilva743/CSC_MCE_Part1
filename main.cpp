@@ -1,15 +1,21 @@
 #include "gradeCalculator.h"
 
 int main(){
+    
+    std::vector<float> assign {100, 100, 100, 100, 100};
+    std::vector<float> lab {5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
+    float last_exam = 90;
+    float mec = 30;
+    float last_proj = 300;
+    
+    Grade student(assign, lab, last_exam, mec, last_proj);
 
-    Grade chris({100, 100, 100, 100, 100}, {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}, 90, 30, 300);
-    Grade dom({80, 100, 95, 95, 80}, {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}, 85, 30, 300);
-    Grade matt({100, 90, 80, 80, 95}, {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}, 90, 30, 300);
-    Grade mubzy({80, 100, 80, 90, 100}, {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}, 80, 30, 300);
+    int totalNumGrade = student.calculateFinalNumGrade();
+    std::string totalLetterGrade = student.calculateLetterGrade(totalNumGrade);
+    double totalMidtermGrade = student.calculateMidTermGrade(assign, lab);
+    std::cout << totalNumGrade << std::endl;
+    std::cout << totalLetterGrade << std::endl;
+    std::cout << totalMidtermGrade << std::endl;
 
-    chris.calculateFinalGrade();
-    dom.calculateFinalGrade();
-    matt.calculateFinalGrade();
-    mubzy.calculateFinalGrade();
-
-    r
+    return 0;   
+}
