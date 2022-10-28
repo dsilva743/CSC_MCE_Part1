@@ -1,6 +1,7 @@
 ## CSC_MCE_Part1
 
 Building an algorithm to interpret course grades into a semester final grade.
+
 Chris Lawler, Matthew Hayes, Mubariz Saeed, Dominic Silva
 
 # Part 1
