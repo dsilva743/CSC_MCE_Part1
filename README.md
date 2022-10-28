@@ -101,7 +101,7 @@ The input that our code will take in is a name and the data that the user wants 
 	print final project grade: finalproject %
 	
 	print mec grade: mec %
-# Pseudocode for midtergrade function 
+# Pseudocode for Midtermgrade function 
 	Initialize assignmentTotal to zero
 
 	Initialize LabTotal to zero
