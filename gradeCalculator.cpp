@@ -118,6 +118,7 @@ void Grade::calculateCategoricalGrade(){
     for(int i = 0; i < labs.size(); i++){
         labCategorical += labCategorical[i];
     }
+    //This section I divide all the sections by their weight out of 100 which would return a decimal below 1 so I then multiply each section by 10 to get the percent
     assignmentCategorical = assignmentCategorical /500;
     
     assignmentCategorical = assignmentCategorical * 10;
@@ -138,6 +139,7 @@ void Grade::calculateCategoricalGrade(){
     
     mecProjectGrade = mecProjectGrade * 10;
     
+    //These commands output each section with the name of the section the number and a percent symbol
     Std::Cout<< "Assignments Grade: " << assignmentCategorical << "%" << std::endl;
     
     Std::Cout<< "Labs Grade: " << labCategorical << "%" << std::endl;
