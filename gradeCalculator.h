@@ -19,6 +19,7 @@ class Grade{
         int calculateFinalGrade();
         std::string calculateLetterGrade();
         double calculateMidTermGrade();
+        void calculateCategoricalGrade();
 };
 
 
