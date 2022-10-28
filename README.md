@@ -7,6 +7,12 @@ Chris Lawler, Matthew Hayes, Mubariz Saeed, Dominic Silva
 # Part 1
 _________________________________________________________________________________________________________________________________________________________________________
 # Flowchart 
+Flowchart of the code's Operation:
+![image](https://user-images.githubusercontent.com/98554125/198723424-be053a11-851e-42b4-8079-db8228211be6.png)
+1. The code will ask you to choose between 4 datasets which have been hardcoded and assigned as classes.
+2. Then it will ask you to choose an option which you can do by inputting 1-5.
+3. Inputting 1-4 will run a function print out what you have requested and go back to the 2nd step.
+4. inputting 5 will stop the loop and end the program.
 
 
 
@@ -18,7 +24,7 @@ The input that our code will take in is a name and the data that the user wants 
 
 
 
-# PsuedoCode For Finalgrade() func
+# Psuedocode For Finalgrade() func
 Initialize assignment pts to zero
 
 Initialize lab pts to zero
@@ -37,9 +43,15 @@ Initialize total pts to the sum of assignment pts, lab pts ,finalExamPts, mecPro
 
 Return totalpts 
 
-Flowchart of the code's Operation:
-![image](https://user-images.githubusercontent.com/98554125/198723424-be053a11-851e-42b4-8079-db8228211be6.png)
-1. The code will ask you to choose between 4 datasets which have been hardcoded and assigned as classes.
-2. Then it will ask you to choose an option which you can do by inputting 1-5.
-3. Inputting 1-4 will run a function print out what you have requested and go back to the 2nd step.
-4. inputting 5 will stop the loop and end the program.
+# Psuedocode For LetterGrade() func
+	Parameter one is totalPts which is the final grade
+  
+	Initialize string letter variable
+  
+	Create numerous if statement block
+  
+		if totalpts is greater than 94
+			Then set letter to A
+
+
+
