@@ -37,3 +37,5 @@ Initialize total pts to the sum of assignment pts, lab pts ,finalExamPts, mecPro
 
 Return totalpts 
 
+![image](https://user-images.githubusercontent.com/98554125/198723424-be053a11-851e-42b4-8079-db8228211be6.png)
+
