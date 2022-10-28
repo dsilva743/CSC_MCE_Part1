@@ -52,6 +52,25 @@ The input that our code will take in is a name and the data that the user wants 
   
 		if totalpts is greater than 94
 			Then set letter to A
-
+		else if total pts is in the range 90-94
+			Then set letter to A-
+		else if total pts is in the range 87-90
+			Then set letter to B+
+		else if total pts is in the range 80-83
+			Then set letter to B-
+		else if total pts is in the range 77-80
+			Then set letter to C+
+		else if total pts is in the range 73-77
+			Then set letter to C
+		else if total pts is in the range 70-73
+			Then set letter to C-
+		else if total pts is in the range 67-70
+			Then set letter to D+
+		else if total pts is in the range 60-67
+			Then set letter to D
+		else then set letter to F
+		
+		return the letter
+		
 
 
