@@ -12,14 +12,17 @@
 class Grade{
 
     private:
+
         float final_exam, mec_project, final_project;
         std::vector<float> assignments, labs;
+
     public:
+
         Grade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p);
         int calculateFinalGrade();
-        std::string calculateLetterGrade();
-        double calculateMidTermGrade();
-        void calculateCategoricalGrade();
+        std::string calculateLetterGrade(float totalPts);
+        double calculateMidTermGrade(std::vector<float> a, std::vector<float> l);
+        void calculateCategoricalGrade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p);
 };
 
 
