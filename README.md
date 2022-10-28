@@ -71,22 +71,33 @@ The input that our code will take in is a name and the data that the user wants 
 		else then set letter to F
 		
 		return the letter
+# Pseudocode for calculateCategoricalGrade function
+	Initialize the variables for each section, the five sections are assignments, labs, final exam, final project and mec.
+	
+	for final exam, final project, and mec the grade doesnt need to be calculated and is assigned directly when the class is created.
+	
+	create a for loop that will run through the entire assignments vector
+		add to the assignment variable to find the total amount of points the student got for that section.
 		
-# Psuedocode For MidtermGrade() func
-	Parameter one is a assigment vector data set
+	create a for loop that will run through the whole lab vector
+		add to the lab variable and find the total amount of points the student got for the lab section.
 	
-	Parameter two is the lab vector data set
+	divide assignments by 500 and multiply by 10 to get the percent total for that section
 	
-	Initialize assignmentTotal to zero
-
-	Initialize LabTotal to zero
-
-	Initialize totalGrade to zero
-
-	Using a for loop that loops 3 times and traverses through the assignment vector data set and sum the first 3 assignment grades and store it in the assignment Total variable
-
-	Using another for loop that loops 6 times and traverses through the lab vector data set and sums the first 6 grades and stores it in labTotal variable 
-
-	Return total grade that has reassigned total grade to the sum of assignment total and lab total
-
-
+	divide labs by 50 and multiply by 10 to get the percent total for that section
+	
+	divide final exam by 100 and multiply by 10 to get the percent total for that section
+	
+	divide final project by 350 and multiply by 10 to get the percent total for that section
+	
+	divide mec by 30 and multiply by 10 to get the percent total for that section
+	
+	print assignment grade: assignmenttotal %
+	
+	print lab grade: labtotal %
+	
+	print final exam grade: finalexam %
+	
+	print final project grade: finalproject %
+	
+	print mec grade: mec %
