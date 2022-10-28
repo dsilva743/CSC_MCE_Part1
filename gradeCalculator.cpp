@@ -119,19 +119,19 @@ void Grade::calculateCategoricalGrade(std::vector<float> a, std::vector<float> l
     }
     //This section I divide all the sections by their weight out of 100 which would return a decimal below 1 so I then multiply each section by 10 to get the percent
     assingmentCategorical = assingmentCategorical / 500;
-    assingmentCategorical = assingmentCategorical * 10;
+    assingmentCategorical = assingmentCategorical * 100;
 
     labCategorical = labCategorical / 50;
-    labCategorical = labCategorical * 10;
+    labCategorical = labCategorical * 100;
 
     finalExamGrade = finalExamGrade / 100;
-    finalExamGrade = finalExamGrade * 10;
+    finalExamGrade = finalExamGrade * 100;
 
-    finalProjectGrade = finalProjectGrade /350;
-    finalProjectGrade = finalProjectGrade * 10;
+    finalProjectGrade = finalProjectGrade / 350;
+    finalProjectGrade = finalProjectGrade * 100;
 
     mecProjectGrade = mecProjectGrade / 30;
-    mecProjectGrade = mecProjectGrade * 10;
+    mecProjectGrade = mecProjectGrade * 100;
 
     //These commands output each section with the name of the section the number and a percent symbol
     std::cout<< "Assignments Grade: " << assingmentCategorical << "%" << std::endl;
