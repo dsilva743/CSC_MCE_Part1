@@ -27,17 +27,12 @@ int main(){
     float domMec = 30;
     float domLastProj = 320;
     //these are the variables for the grade class for each of the 4 student datasets
-    Grade Mubariz(mubzyAssign, mubzyLab, mubzyLastExam, mubzyMec,  mubzyLastProj);
-    Grade Matt(mattAssign, mattLab, mattLastExam, mattMec,  mattLastProj);
-    Grade Chris(chrisAssign, chrisLab, chrisLastExam, chrisMec,  chrisLastProj);
-    Grade Dom(domAssign, domLab, domLastExam, domMec,  domLastProj);
+    Grade student(domAssign, domLab, domLastExam, domMec,  domLastProj);
 
-    int totalNumGrade = student.calculateFinalNumGrade();
+    int totalNumGrade = student.calculateFinalGrade();
     std::string totalLetterGrade = student.calculateLetterGrade(totalNumGrade);
-    double totalMidtermGrade = student.calculateMidTermGrade(assign, lab);
-    std::cout << totalNumGrade << std::endl;
-    std::cout << totalLetterGrade << std::endl;
-    std::cout << totalMidtermGrade << std::endl;
+    double totalMidtermGrade = student.calculateMidTermGrade(domAssign, domLab);
+    student.calculateCategoricalGrade(domAssign, domLab, domLastExam, domMec,  domLastProj);
 
     return 0;   
 }
