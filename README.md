@@ -37,5 +37,9 @@ Initialize total pts to the sum of assignment pts, lab pts ,finalExamPts, mecPro
 
 Return totalpts 
 
+Flowchart of the code's Operation:
 ![image](https://user-images.githubusercontent.com/98554125/198723424-be053a11-851e-42b4-8079-db8228211be6.png)
-
+1. The code will ask you to choose between 4 datasets which have been hardcoded and assigned as classes.
+2. Then it will ask you to choose an option which you can do by inputting 1-5.
+3. Inputting 1-4 will run a function print out what you have requested and go back to the 2nd step.
+4. inputting 5 will stop the loop and end the program.
