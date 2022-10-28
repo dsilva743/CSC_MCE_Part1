@@ -97,3 +97,56 @@ double Grade::calculateMidTermGrade(std::vector<float> a, std::vector<float> l){
 
 
 }
+
+//calculates the categorical grade you have for each section and outputs it
+void Grade::calculateCategoricalGrade(){
+    double assingmentCategorical = 0;
+    
+    double labCategorical = 0;
+    
+    double finalExamGrade = final_exam;
+    
+    double finalProjectGrade = final_project;
+    
+    double mecProjectGrade = mec_project;
+    
+    //calculates the total grade of the assignments
+    for(int i = 0; i < assignments.size(); i++){
+        assignmentCategorical += assignmentCategorical[i];
+    }
+    //calculates the total grade of the labs
+    for(int i = 0; i < labs.size(); i++){
+        labCategorical += labCategorical[i];
+    }
+    assignmentCategorical = assignmentCategorical /500;
+    
+    assignmentCategorical = assignmentCategorical * 10;
+    
+    labCategorical = labCategorical / 50;
+    
+    labCategorical = labCategorical * 10;
+    
+    finalExamGrade = finalExamGrade / 100;
+    
+    finalExamGrade = finalExamGrade * 10;
+    
+    finalProjectGrade = finalProjectGrade /350;
+    
+    finalProjectGrade = finalProjectGrade * 10;
+    
+    mecProjectGrade = mecProjectGrade / 30;
+    
+    mecProjectGrade = mecProjectGrade * 10;
+    
+    Std::Cout<< "Assignments Grade: " << assignmentCategorical << "%" << std::endl;
+    
+    Std::Cout<< "Labs Grade: " << labCategorical << "%" << std::endl;
+    
+    Std::Cout<< "Final Project Grade: " << finalProjectGrade << "%" << std::endl;
+    
+    Std::Cout<< "Final Exam Grade: " << finalExamGrade << "%" << std::endl;
+    
+    Std::Cout<< "MEC project Grade: " << mecProjectGrade <<  "%" << std::endl;
+    
+    
+}
