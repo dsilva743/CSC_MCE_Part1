@@ -1,8 +1,9 @@
 ## CSC_MCE_Part1
 Building an algorithm to interpret course grades into a semester final grade.
 
-
-![image](https://user-images.githubusercontent.com/98554238/198719285-9071bd9f-6706-4a69-8c60-4acf0241d1d3.png)
+# Part 1
+_________________________________________________________________________________________________________________________________________________________________________
+# Flowchart 
 
 
 
