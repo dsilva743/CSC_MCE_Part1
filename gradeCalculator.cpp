@@ -52,3 +52,10 @@ char Grade::calculateLetterGrade(float totalPts){
    }
     
 }
+
+double Grade::calculateMidTermGrade(){
+
+
+
+
+}
