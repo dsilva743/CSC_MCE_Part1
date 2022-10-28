@@ -25,23 +25,23 @@ The input that our code will take in is a name and the data that the user wants 
 
 
 # Psuedocode For Finalgrade() func
-Initialize assignment pts to zero
+	Initialize assignment pts to zero
 
-Initialize lab pts to zero
+	Initialize lab pts to zero
 
-Initialize finalExamPts to final_exam private variable 
+	Initialize finalExamPts to final_exam private variable 
 
-Initialize mecprojects to mec_project private variable 
+	Initialize mecprojects to mec_project private variable 
 
-Initialize final project to final_project private variable
+	Initialize final project to final_project private variable
 
-Using a for loop traverse through assignment vector data set and sum each value and store it in the assignment pts variable
+	Using a for loop traverse through assignment vector data set and sum each value and store it in the assignment pts variable
 
-Using another for loop traverse through lab vector data set and sum each value and store it in the lab pts pts variable
+	Using another for loop traverse through lab vector data set and sum each value and store it in the lab pts pts variable
 
-Initialize total pts to the sum of assignment pts, lab pts ,finalExamPts, mecProjectPts, finalProjectPts and device by 10 for the final grade value
+	Initialize total pts to the sum of assignment pts, lab pts ,finalExamPts, mecProjectPts, finalProjectPts and device by 10 for the final grade value
 
-Return totalpts 
+	Return totalpts 
 
 # Psuedocode For LetterGrade() func
 	Parameter one is totalPts which is the final grade
