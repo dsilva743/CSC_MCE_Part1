@@ -14,4 +14,5 @@ class Grade{
         Grade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p);
         int calculateFinalGrade();
         char calculateLetterGrade();
+        double calculateMidTermGrade();
 };
