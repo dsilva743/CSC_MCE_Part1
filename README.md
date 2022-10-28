@@ -24,7 +24,7 @@ The input that our code will take in is a name and the data that the user wants 
 
 
 
-# Psuedocode For Finalgrade() func
+# Psuedocode For Finalgrade function
 	Initialize assignment pts to zero
 
 	Initialize lab pts to zero
@@ -43,7 +43,7 @@ The input that our code will take in is a name and the data that the user wants 
 
 	Return totalpts 
 
-# Psuedocode For LetterGrade() func
+# Psuedocode For LetterGrade function
 	Parameter one is totalPts which is the final grade
   
 	Initialize string letter variable
@@ -101,3 +101,16 @@ The input that our code will take in is a name and the data that the user wants 
 	print final project grade: finalproject %
 	
 	print mec grade: mec %
+# Pseudocode for midtergrade function 
+	Initialize assignmentTotal to zero
+
+	Initialize LabTotal to zero
+
+	Initialize totalGrade to zero
+
+	Using a for loop that loops 3 times and traverses through the assignment vector data set and sum the first 3 assignment grades and store it in the assignment Total variable
+
+	Using another for loop that loops 6 times and traverses through the lab vector data set and sums the first 6 grades and stores it in labTotal variable 
+
+	Return total grade that has reassigned total grade to the sum of assignment total and lab total
+
