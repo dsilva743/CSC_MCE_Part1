@@ -93,20 +93,20 @@ double Grade::calculateMidTermGrade(std::vector<float> a, std::vector<float> l){
         labTotal += labs[i];
     }
 
-    return totalGrade = assignmentTotal + labTotal;
+    totalGrade = assignmentTotal + labTotal;
+
+    return totalGrade;
 
 }
 
 //calculates the categorical grade you have for each section and outputs it
-void Grade::calculateCategoricalGrade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p){
+void Grade::calculateCategoricalGrade(std::vector<float> a, std::vector<float> l, float f_e, float mec_p, float f_p, double midTerm){
+
+    double midterm = midTerm;
     double assingmentCategorical = 0;
-
     double labCategorical = 0;
-
     double finalExamGrade = f_e;
-
     double finalProjectGrade = f_p;
-
     double mecProjectGrade = mec_p;
 
     //calculates the total grade of the assignments
@@ -120,6 +120,9 @@ void Grade::calculateCategoricalGrade(std::vector<float> a, std::vector<float> l
     //This section I divide all the sections by their weight out of 100 which would return a decimal below 1 so I then multiply each section by 10 to get the percent
     assingmentCategorical = assingmentCategorical / 500;
     assingmentCategorical = assingmentCategorical * 100;
+
+    midterm /= 300;
+    midterm *= 100;
 
     labCategorical = labCategorical / 50;
     labCategorical = labCategorical * 100;
@@ -138,10 +141,17 @@ void Grade::calculateCategoricalGrade(std::vector<float> a, std::vector<float> l
 
     std::cout<< "Labs Grade: " << labCategorical << "%" << std::endl;
 
+    std::cout << "Mid-term Grade: " << midterm << "%" << std::endl;
+
+    std::cout<< "MEC project Grade: " << mecProjectGrade <<  "%" << std::endl;
+
     std::cout<< "Final Project Grade: " << finalProjectGrade << "%" << std::endl;
 
     std::cout<< "Final Exam Grade: " << finalExamGrade << "%" << std::endl;
 
-    std::cout<< "MEC project Grade: " << mecProjectGrade <<  "%" << std::endl;
+
 
 }
+
+
+
