@@ -73,6 +73,10 @@ The input that our code will take in is a name and the data that the user wants 
 		return the letter
 		
 # Psuedocode For MidtermGrade() func
+	Parameter one is a assigment vector data set
+	
+	Parameter two is the lab vector data set
+	
 	Initialize assignmentTotal to zero
 
 	Initialize LabTotal to zero
