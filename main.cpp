@@ -41,10 +41,10 @@ int main(){
     Grade student4(mubzyAssign, mubzyLab, mubzyLastExam, mubzyMec,  mubzyLastProj);
 
     int num = getChoice();
-
+    //this loop runs and outputs the grades for the four different functions until 5 is input, 1-4 are the four different datasets we have included for each of us
     while(num != 5) {
         if (num == 1) {
-
+            //if 1 is input it displays dom's grades
             std::cout << "Dom Grades: " << std::endl;
             int totalNumGrade = student1.calculateFinalGrade();
             double midTerm = student1.calculateMidTermGrade(domAssign, domLab);
@@ -53,7 +53,7 @@ int main(){
             num = getChoice();
         }
         else if(num == 2) {
-
+            // if 2 is input it outputs chris's grades
             std::cout << "Chris Grades: " << std::endl;
             int totalNumGrade = student2.calculateFinalGrade();
             double midTerm = student2.calculateMidTermGrade(chrisAssign, chrisLab);
@@ -62,7 +62,7 @@ int main(){
             num = getChoice();
         }
         else if(num == 3){
-
+        //if 3 is input it displays matt's grades
             std::cout << "Matt Grades: " << std::endl;
             int totalNumGrade = student3.calculateFinalGrade();
             double midTerm = student3.calculateMidTermGrade(mattAssign, mattLab);
@@ -71,7 +71,7 @@ int main(){
             num = getChoice();
         }
         else if(num == 4){
-
+        //if 4 is input it shows mubzy's grades
             std::cout << "Mubzy Grades: " << std::endl;
             int totalNumGrade = student4.calculateFinalGrade();
             double midTerm = student4.calculateMidTermGrade(mubzyAssign, mubzyLab);
@@ -79,6 +79,7 @@ int main(){
             student4.calculateCategoricalGrade(mubzyAssign, mubzyLab, mubzyLastExam, mubzyMec, mubzyLastProj, midTerm);
             num = getChoice();
         }
+        //if anything is is input other than 1-4 it stops the while loop and outputs good bye
         else{
             break;
         }
@@ -96,7 +97,7 @@ int getChoice() {
 
     std::cout << std::endl;
 
-    std::cout << "Select one person who you would like to review grades: " << std::endl;
+    std::cout << "Select one person whose grades you would like to view: " << std::endl;
     std::cout << " 1. Dom " << std::endl;
     std::cout << " 2. Chris " << std::endl;
     std::cout << " 3. Matt " << std::endl;
