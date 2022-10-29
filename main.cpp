@@ -50,6 +50,8 @@ int main(){
             double midTerm = student1.calculateMidTermGrade(domAssign, domLab);
             std::string totalLetterGrade = student1.calculateLetterGrade(totalNumGrade);
             student1.calculateCategoricalGrade(domAssign, domLab, domLastExam, domMec, domLastProj, midTerm);
+            std::cout << "Final Course Numerical Grade: " << totalNumGrade << "%" << std::endl;
+            std::cout << "Final Course Letter Grade: " << totalLetterGrade << std::endl;
             num = getChoice();
         }
         else if(num == 2) {
@@ -59,6 +61,8 @@ int main(){
             double midTerm = student2.calculateMidTermGrade(chrisAssign, chrisLab);
             std::string totalLetterGrade = student2.calculateLetterGrade(totalNumGrade);
             student2.calculateCategoricalGrade(chrisAssign, chrisLab, chrisLastExam, chrisMec, chrisLastProj, midTerm);
+            std::cout << "Final Course Numerical Grade: " << totalNumGrade << "%" << std::endl;
+            std::cout << "Final Course Letter Grade: " << totalLetterGrade << std::endl;
             num = getChoice();
         }
         else if(num == 3){
@@ -68,6 +72,8 @@ int main(){
             double midTerm = student3.calculateMidTermGrade(mattAssign, mattLab);
             std::string totalLetterGrade = student3.calculateLetterGrade(totalNumGrade);
             student3.calculateCategoricalGrade(mattAssign, mattLab, mattLastExam, mattMec, mattLastProj, midTerm);
+            std::cout << "Final Course Numerical Grade: " << totalNumGrade << "%" << std::endl;
+            std::cout << "Final Course Letter Grade: " << totalLetterGrade << std::endl;
             num = getChoice();
         }
         else if(num == 4){
@@ -77,6 +83,8 @@ int main(){
             double midTerm = student4.calculateMidTermGrade(mubzyAssign, mubzyLab);
             std::string totalLetterGrade = student4.calculateLetterGrade(totalNumGrade);
             student4.calculateCategoricalGrade(mubzyAssign, mubzyLab, mubzyLastExam, mubzyMec, mubzyLastProj, midTerm);
+            std::cout << "Final Course Numerical Grade: " << totalNumGrade << "%" << std::endl;
+            std::cout << "Final Course Letter Grade: " << totalLetterGrade << std::endl;
             num = getChoice();
         }
         //if anything is is input other than 1-4 it stops the while loop and outputs good bye
