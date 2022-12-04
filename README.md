@@ -112,4 +112,6 @@ The program will first show a list of each choice which is 1,2,3,4,5. Choice 1 i
 	Using another for loop that loops 6 times and traverses through the lab vector data set and sums the first 6 grades and stores it in labTotal variable 
 
 	Return total grade that has reassigned total grade to the sum of assignment total and lab total
+## CSC_MCE_Part2
+Reevaluate your algorithm and consider if this were to be scaled up to production level, and incorporated into a software like Gradescope:
 
